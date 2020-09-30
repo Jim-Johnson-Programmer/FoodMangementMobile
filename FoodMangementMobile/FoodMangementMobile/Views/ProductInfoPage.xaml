@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodMangementMobile.Views.ProductInfoPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="5">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Product Details" FontSize="30" HorizontalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Brand Name" WidthRequest="70" HorizontalOptions="Start"></Label>
+                <Label x:Name="BrandName" Text="{Binding Path=BrandName}" HorizontalOptions="StartAndExpand" ></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Category Path" WidthRequest="70"></Label>
+                <Label x:Name="CategoryPath" Text="{Binding Path=CategoryPath}" HorizontalOptions="StartAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Raw Size" WidthRequest="70"></Label>
+                <Label x:Name="RawSize" Text="{Binding Path=RawSize}" HorizontalOptions="StartAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="UPC" WidthRequest="70"></Label>
+                <Label x:Name="Upc" Text="{Binding Path=Upc}" HorizontalOptions="StartAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="20,35,20,20">
+                <Image HorizontalOptions="CenterAndExpand" Source="{Binding Path=ImageSourceUrl}" HeightRequest="200"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="BackButton" Clicked="BackButton_OnClicked" Text="Back to Search" HorizontalOptions="CenterAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
