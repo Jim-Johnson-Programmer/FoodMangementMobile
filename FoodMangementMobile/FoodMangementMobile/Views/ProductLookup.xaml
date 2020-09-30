@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodMangementMobile.Views.ProductLookup">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Brand Name" WidthRequest="70"></Label>
+                <Label x:Name="BrandName" Text="My Brand Name" HorizontalOptions="StartAndExpand" ></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Category Path" WidthRequest="70"></Label>
+                <Label x:Name="CategoryPath" Text="Category/Path/Category" HorizontalOptions="StartAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Raw Size" WidthRequest="70"></Label>
+                <Label x:Name="RawSize" Text="3 L" HorizontalOptions="StartAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="UPC" WidthRequest="70"></Label>
+                <Label x:Name="Upc" Text="3 L" HorizontalOptions="StartAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="20,35,20,20">
+                <Image HorizontalOptions="CenterAndExpand" Source="https://i5.walmartimages.com/asr/b0534f32-1306-4b6f-99d4-c53a8d43fbd7.1489e0e7eef661f2bdeb54a71cc193d8.jpeg" HeightRequest="200"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
